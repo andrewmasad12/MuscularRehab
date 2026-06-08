@@ -32,7 +32,7 @@ a {
   }
 
   .eyebrow {
-    @apply text-xs font-semibold uppercase tracking-[0.24em] text-sky-300;
+    @apply text-xs font-semibold uppercase tracking-[0.24em] text-teal-300;
   }
 
   .btn {
@@ -40,15 +40,15 @@ a {
   }
 
   .btn-primary {
-    @apply bg-white text-stone-950 shadow-lg shadow-sky-950/30 hover:bg-sky-100;
+    @apply bg-white text-stone-950 shadow-lg shadow-teal-950/30 hover:bg-teal-50;
   }
 
   .btn-secondary {
-    @apply border border-white/20 bg-white/[0.04] text-white hover:border-sky-200/60 hover:bg-white/[0.08];
+    @apply border border-white/20 bg-white/[0.04] text-white hover:border-teal-200/60 hover:bg-white/[0.08];
   }
 
   .card {
-    @apply min-h-[260px] rounded-lg border border-white/10 bg-white/[0.04] p-6 transition duration-300 hover:-translate-y-1 hover:border-sky-200/35 hover:bg-white/[0.07];
+    @apply min-h-[260px] rounded-lg border border-white/10 bg-white/[0.04] p-6 transition duration-300 hover:-translate-y-1 hover:border-teal-200/35 hover:bg-white/[0.07];
   }
 }
 
@@ -72,7 +72,7 @@ a {
 .motion-line {
   position: absolute;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(125, 211, 252, 0.8), transparent);
+  background: linear-gradient(90deg, transparent, rgba(94, 234, 212, 0.78), transparent);
   animation: drift 6s ease-in-out infinite;
 }
 

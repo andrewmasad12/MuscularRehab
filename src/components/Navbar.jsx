@@ -16,13 +16,13 @@ export default function Navbar({ config }) {
     <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-stone-950/80 backdrop-blur-xl">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
         <a href="#top" className="group flex items-center gap-3" aria-label={`${config.name} home`}>
-          <span className="grid h-10 w-10 place-items-center rounded-full border border-sky-300/40 bg-white text-sm font-black text-stone-950">
-            KX
+          <span className="grid h-10 w-10 place-items-center rounded-full border border-teal-300/40 bg-white text-sm font-black text-stone-950">
+            MM
           </span>
           <span className="leading-none">
             <span className="block text-sm font-semibold tracking-[0.22em] text-white">{config.name}</span>
             <span className="mt-1 block text-[0.65rem] uppercase tracking-[0.18em] text-stone-400">
-              Mobility Studio
+              {config.subheading}
             </span>
           </span>
         </a>

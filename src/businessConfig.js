@@ -1,41 +1,104 @@
 export const businessConfig = {
-  name: 'KINESIS-X Mobility',
-  tagline: 'Biomechanics-informed assisted stretch therapy',
+  name: 'Masad Motion',
+  tagline: 'Move Better. Understand Why.',
+  subheading: 'Mobility • Recovery • Performance',
   location: 'Phoenix Metro',
   phone: '(480) 555-0198',
-  email: 'hello@kinesisxmobility.com',
-  bookingUrl: 'https://calendly.com/kinesisxmobility/session',
-  consultationUrl: 'https://calendly.com/kinesisxmobility/consultation',
-  instagramUrl: 'https://instagram.com/kinesisxmobility',
+  email: 'hello@masadmotion.com',
+  bookingUrl: 'https://calendar.google.com/calendar/u/0?cid=YW5kcmV3Lm1hc2FkMTJAZ21haWwuY29t',
+  consultationUrl: 'https://calendar.google.com/calendar/u/0?cid=YW5kcmV3Lm1hc2FkMTJAZ21haWwuY29t',
+  bookingPlatform: 'Google Calendar',
+  appointmentScheduleUrl: 'https://calendar.google.com/calendar/u/0?cid=YW5kcmV3Lm1hc2FkMTJAZ21haWwuY29t',
+  publicCalendarEmbedUrl:
+    'https://calendar.google.com/calendar/embed?src=andrew.masad12%40gmail.com&ctz=America%2FPhoenix&mode=WEEK&showTitle=0&showPrint=0&showTabs=1&showCalendars=0',
+  bookingNote:
+    'Choose the session that fits your goal, review the live availability window, and reserve time for focused movement and recovery work.',
+  bookingFlow: {
+    title: 'Schedule a Masad Motion session',
+    body:
+      'Pick the session that matches your goal. Each booking is built around mobility, recovery, and a clearer understanding of how your body moves.',
+    steps: ['Choose session', 'Pick an open time', 'Confirm booking'],
+    timeZone: 'America/Phoenix',
+    timeZoneOffset: '-07:00',
+    bookingWindowDays: 21,
+    slotIntervalMinutes: 30,
+    minimumNoticeHours: 12,
+    availability: [
+      { day: 1, start: '09:00', end: '17:00' },
+      { day: 2, start: '09:00', end: '17:00' },
+      { day: 3, start: '09:00', end: '17:00' },
+      { day: 4, start: '09:00', end: '17:00' },
+      { day: 5, start: '09:00', end: '15:00' },
+      { day: 6, start: '10:00', end: '14:00' },
+    ],
+    sessions: [
+      {
+        id: 'assisted-stretch',
+        name: 'Assisted Stretch Session',
+        duration: '60 min',
+        durationMinutes: 60,
+        price: 'From $95',
+        description: 'A focused mobility and assisted stretch session for stiffness, recovery, and movement quality.',
+      },
+      {
+        id: 'movement-assessment',
+        name: 'Movement Assessment',
+        duration: '45 min',
+        durationMinutes: 45,
+        price: 'From $75',
+        description: 'A posture, range, and movement screen with practical mobility recommendations.',
+      },
+      {
+        id: 'mobile-recovery',
+        name: 'Mobile Recovery Session',
+        duration: '60-90 min',
+        durationMinutes: 90,
+        price: 'Custom',
+        description: 'On-site recovery for homes, teams, events, offices, and private training spaces.',
+      },
+    ],
+  },
+  instagramUrl: 'https://instagram.com/masadmotion',
   socials: [
-    { label: 'Instagram', url: 'https://instagram.com/kinesisxmobility' },
-    { label: 'TikTok', url: 'https://tiktok.com/@kinesisxmobility' },
-    { label: 'YouTube', url: 'https://youtube.com/@kinesisxmobility' },
+    { label: 'Instagram', url: 'https://instagram.com/masadmotion' },
+    { label: 'TikTok', url: 'https://tiktok.com/@masadmotion' },
+    { label: 'YouTube', url: 'https://youtube.com/@masadmotion' },
   ],
   seo: {
-    title: 'KINESIS-X Mobility | Assisted Stretch Therapy in Phoenix',
+    title: 'Masad Motion | Mobility, Recovery & Performance in Phoenix',
     description:
-      'Premium assisted stretch therapy, mobility optimization, and biomechanics-focused recovery for active adults and athletes in the Phoenix Metro area.',
+      'Premium assisted stretch therapy, movement assessment, mobility education, and recovery support for active adults and athletes in the Phoenix Metro area.',
     keywords:
-      'assisted stretch therapy Phoenix, mobility optimization, sports recovery Phoenix, PNF stretching, movement assessment, biomechanics recovery',
+      'Masad Motion, mobility Phoenix, recovery Phoenix, performance mobility, movement assessment, assisted stretch therapy Phoenix, mobility education, sports recovery Phoenix',
   },
   hero: {
-    headline: 'Move Better. Feel Better. Perform Better.',
-    subheadline:
-      'Assisted stretch therapy, mobility optimization, and biomechanics-focused recovery designed to help active adults, athletes, and everyday people reduce stiffness, improve movement, and recover smarter.',
-    eyebrow: 'Assisted stretch therapy + biomechanics',
-    proofPoints: ['1:1 mobility sessions', 'Movement assessments', 'Mobile recovery available'],
+    headline: 'Move Better. Understand Why.',
+    subheadline: 'Mobility • Recovery • Performance',
+    eyebrow: 'Personal movement science + assisted recovery',
+    proofPoints: ['1:1 mobility sessions', 'Movement assessments', 'Recovery strategy'],
   },
   about: {
-    eyebrow: 'About the studio',
-    title: 'A smarter approach to mobility work.',
+    eyebrow: 'About Masad Motion',
+    title: 'A personal approach to movement that makes sense.',
     body:
-      'KINESIS-X Mobility blends assisted stretching, movement assessment, and recovery strategy into a focused session built around how your body actually moves. Sessions are calm, precise, and collaborative, with practical education you can use between appointments.',
+      'Masad Motion blends assisted stretching, movement assessment, and recovery strategy into focused sessions built around how your body actually moves. The work is calm, precise, and collaborative, with practical education you can use between appointments.',
+    brandExplanation:
+      'Masad Motion is built for people who want more than a stretch. The goal is to help you move with more confidence, recover with intention, and understand the why behind what you feel.',
     stats: [
       { value: '60 min', label: 'Focused sessions' },
       { value: '1:1', label: 'Hands-on coaching' },
       { value: '3 step', label: 'Assess, restore, reinforce' },
     ],
+  },
+  founder: {
+    eyebrow: 'Founder',
+    title: 'Meet Andrew Masad',
+    credentials: ["Bachelor's degree in Kinesiology", '4th Degree Black Belt', 'Certified Stretch Practitioner'],
+    question: 'Why do people move the way they do?',
+    body:
+      'Through martial arts, kinesiology, mobility work, and working with hundreds of clients, I developed a movement-first approach focused on helping people understand their body, not just stretch it.',
+    goal:
+      'My goal is to help clients move better, recover intelligently, and understand the why behind what they feel.',
   },
   services: [
     {
@@ -100,19 +163,19 @@ export const businessConfig = {
   },
   transformations: [
     {
-      area: 'Hip rotation',
-      before: 'Limited comfort in deep squat positions',
-      after: 'More usable hip motion with better control',
+      area: 'Golf Mobility',
+      before: 'Limited backswing rotation',
+      after: 'Improved thoracic rotation and smoother swing mechanics',
     },
     {
-      area: 'Shoulder reach',
-      before: 'Stiff overhead positions after training',
-      after: 'Smoother overhead access and relaxed upper back',
+      area: 'Desk Worker Recovery',
+      before: 'Neck and shoulder stiffness',
+      after: 'Improved movement comfort and reduced daily tension',
     },
     {
-      area: 'Spine + hamstrings',
-      before: 'Tight posterior chain after desk-heavy weeks',
-      after: 'Easier forward fold and more fluid transitions',
+      area: 'Lower Body Mobility',
+      before: 'Restricted squat depth and hip stiffness',
+      after: 'Improved hip control and easier movement patterns',
     },
   ],
   testimonials: [
@@ -124,7 +187,7 @@ export const businessConfig = {
     },
     {
       quote:
-        'KINESIS-X helped me feel ready for training again without overselling anything. Calm, smart, and effective.',
+        'Masad Motion helped me feel ready for training again without overselling anything. Calm, smart, and effective.',
       name: 'Jordan T.',
       role: 'Strength athlete',
     },

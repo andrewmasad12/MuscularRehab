@@ -1,21 +1,21 @@
 import React from 'react'
-import { motion } from 'framer-motion'
 import { businessConfig as config } from './businessConfig'
 import Navbar from './components/Navbar'
-import SectionHeader from './components/SectionHeader'
 import {
   AboutSection,
   BenefitsSection,
+  BookingFlowSection,
   BookingCTA,
   FAQSection,
   Footer,
+  FounderSection,
   HeroSection,
   HowItWorksSection,
   MovementPhilosophy,
   ServicesSection,
   TestimonialsSection,
   TransformationsSection,
-} from './components/Sections'
+} from './components/sections'
 
 function Seo() {
   const schema = {
@@ -41,20 +41,22 @@ function Seo() {
 
 export default function App() {
   return (
-    <div className="min-h-screen overflow-hidden bg-stone-950 text-white selection:bg-sky-300 selection:text-stone-950">
+    <div className="min-h-screen overflow-hidden bg-stone-950 text-white selection:bg-teal-300 selection:text-stone-950">
       <Seo />
       <Navbar config={config} />
       <main>
         <HeroSection config={config} />
-        <AboutSection config={config} SectionHeader={SectionHeader} motion={motion} />
-        <ServicesSection config={config} SectionHeader={SectionHeader} motion={motion} />
-        <HowItWorksSection config={config} SectionHeader={SectionHeader} motion={motion} />
-        <BenefitsSection config={config} SectionHeader={SectionHeader} motion={motion} />
-        <MovementPhilosophy config={config} motion={motion} />
-        <TransformationsSection config={config} SectionHeader={SectionHeader} motion={motion} />
-        <TestimonialsSection config={config} SectionHeader={SectionHeader} motion={motion} />
-        <FAQSection config={config} SectionHeader={SectionHeader} />
-        <BookingCTA config={config} motion={motion} />
+        <AboutSection config={config} />
+        <FounderSection config={config} />
+        <ServicesSection config={config} />
+        <HowItWorksSection config={config} />
+        <BenefitsSection config={config} />
+        <MovementPhilosophy config={config} />
+        <TransformationsSection config={config} />
+        <TestimonialsSection config={config} />
+        <FAQSection config={config} />
+        <BookingFlowSection config={config} />
+        <BookingCTA config={config} />
       </main>
       <Footer config={config} />
     </div>
